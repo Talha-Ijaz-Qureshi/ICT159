@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    int nterm, f_zero = 0, f_one = 1, nvalue, typeCheck;
+    int nterm, typeCheck;
+    unsigned long long int f_zero = 0, f_one = 1, nvalue = 0;
 
     printf("Enter the nth-term for F(n): ");
     typeCheck = scanf("%d", &nterm);
@@ -20,20 +21,21 @@ int main() {
         return 1;
     }
     
-
-    printf("Fibonacci sequence till F(%d):\n", nterm);
     printf("%d ", f_zero);
 
     if (nterm > 0) {
         printf("%d ", f_one);
+        nvalue = f_one;
     }
 
     for (int i = 2; i <= nterm; i++) {
         nvalue = f_zero + f_one;
-        printf("%d ", nvalue);
+        printf("%llu ", nvalue);
         f_zero = f_one;
         f_one = nvalue;
     }
+
+    printf("\nValue of Fibonacci series at F(%d): %llu \n", nterm, nvalue);
     getchar();
     return 0;
 }

@@ -1,0 +1,13 @@
+What Works
+-The program can take in an input, and ensure the entered input is valid within the given range of 1-95, and multiple of 5 for AU$
+-The program can calculate and return the coins for entered value, ensuring it returns the maximum number of higher valued coins first.
+-The program prints out the returned coins, printing only the coins which have a count.
+-The program will prompt the user to input a value to continue or exit the program, and ensures it does either only when the correct value is entered.
+
+What does not work
+-The program does not validate for characters/strings when inputting for amount
+-The program does not prompt the user to re-enter an integer for the amount value, when the user inputs a float value. It only rounds off the float input.
+-The currency selection prompt does not warn the user or prompts them to re-enter a value when they enter a float number.
+
+Virus or Malware Checks
+-All the files within this folder has been scaned for malware of virus by Windows Defender Version: 1.419.544.0 and no threats were found.

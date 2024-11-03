@@ -1,0 +1,11 @@
+int returnIp(float arr[]);
+void toCelsius(float arr[], float cArr[]);
+void toFahren(float cArr[], float fArr[]);
+void printSamples(float kArr[], float cArr[], float fArr[]);
+int returnMax(float arr[]);
+int returnMin(float arr[]);
+void calcAvg(float arr[], float cArr[], float fArr[], float avgArr[]);
+void printAvg(float avgArr[]);
+float input();
+int kUnderThreshold(float arr[], float threshold);
+void state(float cArr[], int index);
